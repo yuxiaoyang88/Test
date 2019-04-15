@@ -1,4 +1,4 @@
-package com.yu;
+﻿package com.yu;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -48,19 +48,7 @@ public class Algorithm_01_05_归并排序 {
 		return arr2;
 	}
 
-	// 归并排序
-	public static int[] mergeSort(int[] arr) {
-		if (arr.length == 1) {
-			return arr;
-		}
-		int[] arr1 = getArr1(arr);
-		int[] arr2 = getArr2(arr);
-		// 对拆分的arr1和arr2分别进行归并排序，然后将结果合并merge
-		int[] arr1_return = mergeSort(arr1);
-		int[] arr2_return = mergeSort(arr2);
-		int[] arr_merge = merge(arr1_return, arr2_return);
-		return arr_merge;
-	}
+
 
 	// 生成有n个元素的随机数组，随机范围为【RangeL，RangeR】
 	public static int[] generateRandomArray(int n, int RangeL, int RangeR) {
@@ -71,5 +59,8 @@ public class Algorithm_01_05_归并排序 {
 		}
 		return arr;
 	}
+//我是B，开始写了。。。
+//asdasdasasd
+/asdasdasd
 
 }

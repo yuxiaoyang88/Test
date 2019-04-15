@@ -30,32 +30,7 @@ public class Algorithm_01_05_归并排序 {
 		// System.out.println(Arrays.toString(arr2));
 	}
 
-	// 合并
-	public static int[] merge(int[] arr1, int[] arr2) {
-		int arr1_length = arr1.length;
-		int arr2_length = arr2.length;
-		int[] arr = new int[arr1_length + arr2_length];
-		int i = 0;
-		int j = 0;
-		for (int h = 0; h < arr1_length + arr2_length; h++) {
-			if (i == arr1_length && j == arr2_length) {
-				break;
-			} else if (i == arr1_length) {
-				arr[h] = arr2[j];
-				j++;
-			} else if (j == arr2_length) {
-				arr[h] = arr1[i];
-				i++;
-			} else if (arr1[i] < arr2[j]) {
-				arr[h] = arr1[i];
-				i++;
-			} else {
-				arr[h] = arr2[j];
-				j++;
-			}
-		}
-		return arr;
-	}
+
 
 	// 将arr拆成两个小的
 	public static int[] getArr1(int[] arr) {

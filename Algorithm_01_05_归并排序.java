@@ -1,4 +1,4 @@
-package com.yu;
+﻿package com.yu;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -32,14 +32,7 @@ public class Algorithm_01_05_归并排序 {
 
 	
 
-	// 将arr拆成两个小的
-	public static int[] getArr1(int[] arr) {
-		int mid = (0 + arr.length) / 2;
-		int[] arr1 = new int[mid];
-		System.arraycopy(arr, 0, arr1, 0, mid);
-		return arr1;
-	}
-
+	
 	public static int[] getArr2(int[] arr) {
 		int length = arr.length;
 		int mid = (0 + length) / 2;
